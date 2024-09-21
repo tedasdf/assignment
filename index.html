@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GDP Growth in 2023</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/tedasdf/assignment/chart.vg.css">
+    <script src="https://cdn.jsdelivr.net/gh/tedasdf/assignment/chart.vg.js"></script>
+    <style>
+        #chart {
+            width: 600px;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>GDP Growth in 2023</h1>
+<div id="chart"></div>
+
+<script>
+    // Sample GDP growth data for 2023
+    const data = [
+        { country: 'United States', growth: 2.1 },
+        { country: 'China', growth: 5.0 },
+        { country: 'Germany', growth: 1.3 },
+        { country: 'India', growth: 6.1 },
+        { country: 'Brazil', growth: 2.5 },
+        { country: 'Japan', growth: 1.0 }
+    ];
+
+    // Create a bar chart
+    const chart = new Chart({
+        target: '#chart',
+        data: data,
+        type: 'bar',
+        x: 'country',
+        y: 'growth',
+        title: 'GDP Growth in 2023 (%)',
+        xLabel: 'Country',
+        yLabel: 'Growth (%)'
+    });
+
+    // Render the chart
+    chart.render();
+</script>
+
+</body>
+</html>
