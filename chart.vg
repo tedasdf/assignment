@@ -3,6 +3,7 @@
   "title": "GDP Data by Country for 2024",
   "width": 800,
   "height": 400,
+  "background": "#e0f7fa",
   "projection": {"type": "equalEarth"},
   "layer": [
     {
@@ -31,7 +32,10 @@
         "color": {
           "field": "2024",
           "type": "quantitative",
-          "title": "GDP (2024)"
+          "title": "GDP (2024)",
+          "scale": {
+            "range": ["#ffcccc", "#b30000"]
+          }
         },
         "tooltip": [
           {"field": "properties.NAME", "type": "nominal", "title": "Country"},
